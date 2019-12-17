@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>(ง •̀₃•́)ง</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-12-16T10:54:59.615Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>WeiBianSanJue</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>0x0001.HB2U</title>
+    <link href="http://yoursite.com/2019/10/15/0x0001-hb2u/"/>
+    <id>http://yoursite.com/2019/10/15/0x0001-hb2u/</id>
+    <published>2019-10-15T02:15:00.000Z</published>
+    <updated>2019-12-16T10:54:59.615Z</updated>
+    
+    <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="172" src="//music.163.com/outchain/player?type=3&id=2063591760&auto=0&height=330"></iframe><h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><ul><li><p>2019-12-11 补录一篇文章</p></li><li><p>口琴《Happy Birthday to you》</p></li></ul><h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><h2 id="制作"><a href="#制作" class="headerlink" title="制作"></a>制作</h2><ul><li>收音设备：iPhone X</li><li>录音软件：iOS 语音备忘录</li><li>剪辑：iOS 语l音备忘录</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;172&quot; src=&quot;//music.163.com/outchain/player?type=3&amp;id
+      
+    
+    </summary>
+    
+    
+      <category term="三绝嘟嘟嘟" scheme="http://yoursite.com/categories/%E4%B8%89%E7%BB%9D%E5%98%9F%E5%98%9F%E5%98%9F/"/>
+    
+    
+      <category term="Podcast" scheme="http://yoursite.com/tags/Podcast/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>0x0000.儿童节试音</title>
+    <link href="http://yoursite.com/2019/09/01/0x0000-test-audio/"/>
+    <id>http://yoursite.com/2019/09/01/0x0000-test-audio/</id>
+    <published>2019-09-01T05:00:57.000Z</published>
+    <updated>2019-12-11T05:49:21.000Z</updated>
+    
+    <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=3&id=2061415492&auto=0&height=66"></iframe><h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><ul><li>口琴《欢乐颂》</li></ul><h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><h2 id="制作"><a href="#制作" class="headerlink" title="制作"></a>制作</h2><ul><li>收音设备：iPhone X</li><li>录音软件：iOS 语音备忘录</li><li>剪辑：iOS 语音备忘录</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;//music.163.com/outchain/player?type=3&amp;id=
+      
+    
+    </summary>
+    
+    
+      <category term="三绝嘟嘟嘟" scheme="http://yoursite.com/categories/%E4%B8%89%E7%BB%9D%E5%98%9F%E5%98%9F%E5%98%9F/"/>
+    
+    
+      <category term="Podcast" scheme="http://yoursite.com/tags/Podcast/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Win10 中使用 Hyper-V 创建 Linux 虚拟机</title>
+    <link href="http://yoursite.com/2019/05/17/win10-hyper-v-linux/"/>
+    <id>http://yoursite.com/2019/05/17/win10-hyper-v-linux/</id>
+    <published>2019-05-17T15:10:08.000Z</published>
+    <updated>2019-12-11T05:49:21.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><blockquote><p>Hyper-V 是微软的一款虚拟化产品，是微软第一个采用类似 Vmware 和 Citrix 开源 Xen 一样的基于 hypervisor 的技术。这也意味着微软会更加直接地与市场先行者 VMware 展开竞争，但竞争的方式会有所不同。</p><p>Hyper-V 是微软提出的一种系统管理程序虚拟化技术，能够实现桌面虚拟化。Hyper-V 最初预定在2008年第一季度，与 Windows Server 2008 同时发布。Hyper-V Server 2012 完成 RTM 版发布。</p></blockquote><p>本帖使用 Windows10 系统中的 Hyper-V 进行虚拟机的搭建。Windows 7 用户同样也可以使用 Hyper-V 进行虚拟机的搭建，但需要去微软官网另行下载 远程服务器管理工具的<a href="https://www.microsoft.com/zh-CN/download/details.aspx?id=7887" target="_blank" rel="noopener">更新补丁包</a>。Win7 的使用过程可<a href="http://blchen.com/manage-hyper-v-remotely-from-windows-7/" target="_blank" rel="noopener">参考此帖</a>。</p><h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ul><li>Windows 10 专业版</li></ul><h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><h3 id="CentOS-7-的-iso-文件"><a href="#CentOS-7-的-iso-文件" class="headerlink" title="CentOS 7 的 iso 文件"></a>CentOS 7 的 iso 文件</h3><h3 id="CPU-虚拟化支持"><a href="#CPU-虚拟化支持" class="headerlink" title="CPU 虚拟化支持"></a>CPU 虚拟化支持</h3><ul><li><p>使用 Hyper-V 需要 CPU 支持虚拟化，并开启此功能，可以在任务管理器中查看是否开启了虚拟化。<br><img src="http://artery.thunisoft.com/resFile?name=img/201904/56c70871f3a943399913a614505d2154.png" alt=""></p></li><li><p>Hyper-V 与 VMware 是不能同时使用的，不过网上也有两者互容的解决方案。</p></li></ul><h3 id="开启-Hyper-V-功能"><a href="#开启-Hyper-V-功能" class="headerlink" title="开启 Hyper-V 功能"></a>开启 Hyper-V 功能</h3><ul><li>进入 控制面板 -&gt; 程序和功能 -&gt; 启用或关闭 Windows 功能</li><li>将 Hpyer-V 复原框选中，启用 Windows 的 Hyper-V 功能<br>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/cc83620011354aa4a116865b80ac2174.png" alt=""></li></ul><h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><h3 id="创建虚拟机"><a href="#创建虚拟机" class="headerlink" title="创建虚拟机"></a>创建虚拟机</h3><ul><li><p>启动 Hyper-V 管理器</p><p>  在【开始】中搜索“Hyper-V”即可</p><p>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/45b5cf9f310e4555a5422011535e7074.png" alt=""></p></li><li><p>进入 Hyper-V 管理器界面</p><p>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/1986b3c698d14bc88e7c9ea4ed10fefd.png" alt=""></p></li><li><p>创建虚拟机</p><p>  操作系统运行在硬件设备上，下面通过 Hyper-V 想到来创建一个虚拟的硬件设备。<br>  点击右侧操作区域中的“新建”/“虚拟机”</p><p>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/5fcbd8e5807b40a0824424a3547113ca.png" alt=""></p></li><li><p>按照“新建虚拟机向导”一步步执行<br>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/36a3a5587ce44315b04403ddfba3402b.png" alt=""></p></li><li><p>填写虚拟机名称与虚拟机的存储位置<br>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/82af6435674e40baa58a411dd992dfe6.png" alt=""></p><p>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/ca5a22f2cd0643b6a5bddf93a4140eb7.png" alt=""></p></li><li><p>指定一个虚拟机的启动内存。我设置成了2048MB。勾选动态内存，节约硬件资源。<br>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/253c1f3a2bab4a4c9e0512b133eda3c2.png" alt=""></p></li><li><p>选择“未链接”（联网的设置方法在其他章节介绍）<br>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/8ab953e32a594257bad65fc1deb45ab7.png" alt=""></p><p>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/79c526a661514d5f827b4c35032d1bda.png" alt=""></p></li><li><p>找到事先准备好的 CentOS7 的 iso 系统镜像文件<br>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/372195c40cb94b7396b5184adf5ec784.png" alt=""></p><p>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/b964827cf0014a448ad213ec1d4fe246.png" alt=""></p></li><li><p>点击“完成”后开始创建虚拟机<br>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/c496fe052fc4446dae3488bc20f32d3c.png" alt=""></p></li><li><p>完成后在 Hyper-V 的界面中间部分“虚拟机”中会有你刚才命名的虚拟机。<br>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/6ceb41f94c444bf093529033ce9a1a88.png" alt=""></p></li></ul><h3 id="安装-CentOS-系统"><a href="#安装-CentOS-系统" class="headerlink" title="安装 CentOS 系统"></a>安装 CentOS 系统</h3><ul><li><p>在“创建虚拟机”中我们已经将 CentOS7 的 iso 镜像放入了虚拟的光驱中。</p></li><li><p>选中创建好的虚拟机，点击右侧“启动”按钮。<br>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/5ff8c1549e354c47bbad086488527ce6.png" alt=""></p></li><li><p>然后点击上面的 “链接…”按钮，弹出一个虚拟机的视图窗口</p><p>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/38c8a8bb136a4fae85a466bb479ed047.png" alt=""></p></li></ul><ul><li><p>CentOS 7 的具体安装过程可以参考这个<a href="https://www.linuxidc.com/Linux/2017-04/143013.htm" target="_blank" rel="noopener">文章</a><br>  注意安装软件包的时候不建议选择最小化和图形化两种安装方式，可以选择基础web服务<br>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/c3ea6d8d8ad945f78efed0cde703f028.png" alt=""></p></li><li><p>安装完成后，会出现登录的界面</p></li></ul><h3 id="创建网络"><a href="#创建网络" class="headerlink" title="创建网络"></a>创建网络</h3><h4 id="新建虚拟网络交换机"><a href="#新建虚拟网络交换机" class="headerlink" title="新建虚拟网络交换机"></a>新建虚拟网络交换机</h4><ul><li><p>点击右侧“操作”选项中“虚拟交换机管理器…”</p><p>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/1d7de490ef4e4123b9f9cd302b25778b.png" alt=""></p></li><li><p>点击“新建虚拟网络交换机”，选择“外部”并“创建虚拟交换机”</p><p>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/e04fe34a3ea74a85be1ee74b9d852a5b.png" alt=""></p></li><li><p>填写一个名称，勾选“链接类型”中的“外部网络“，之后点击确定<br>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/287a13b6d96a4b62bc97271e8a74a840.png" alt=""></p></li><li><p>给虚拟机选取网络</p><p>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/22c1df62e59b401281830823480d8c8f.png" alt=""></p></li></ul><h4 id="编辑网络配置文件"><a href="#编辑网络配置文件" class="headerlink" title="编辑网络配置文件"></a>编辑网络配置文件</h4>  <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@win-i5dseafvgn7 ~]# vim /etc/sysconfig/network-scripts/ifcfg-eth0</span><br></pre></td></tr></table></figure><h4 id="设置成静态IP"><a href="#设置成静态IP" class="headerlink" title="设置成静态IP"></a>设置成静态IP</h4><ul><li><p>修改如下</p>  <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">TYPE=Ethernet                            </span><br><span class="line">PROXY_METHOD=none                        </span><br><span class="line">BROWSER_ONLY=no                          </span><br><span class="line">BOOTPROTO=static           # 静态IP               </span><br><span class="line">DEFROUTE=yes                             </span><br><span class="line">IPV4_FAILURE_FATAL=no                    </span><br><span class="line">IPV6INIT=yes                             </span><br><span class="line">IPV6_AUTOCONF=yes                        </span><br><span class="line">IPV6_DEFROUTE=yes                        </span><br><span class="line">IPV6_FAILURE_FATAL=no                    </span><br><span class="line">IPV6_ADDR_GEN_MODE=stable-privacy        </span><br><span class="line">NAME=eth0                                </span><br><span class="line">UUID=2f997c5a-646f-41b1-98ed-70b78fd2114f</span><br><span class="line">DEVICE=eth0                              </span><br><span class="line">ONBOOT=yes                               </span><br><span class="line">IPADDR=172.16.**.**           # 改为实际的          </span><br><span class="line">GATEWAY=172.16.192.*       # 改为实际的              </span><br><span class="line">DNS1=172.16.1.*                # 改为实际的          </span><br><span class="line">NETMASK=255.255.***.0      # 改为实际的</span><br></pre></td></tr></table></figure></li><li><p>重启网络</p>  <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@win-i5dseafvgn7 ~]# service network restart</span><br></pre></td></tr></table></figure></li></ul><h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><ul><li><p>使用 SSH 工具链接</p><p>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/e2402868f6684445b2a4ec746f8b696e.png" alt=""></p></li></ul><ul><li><p>右键虚拟机链接</p><p>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/c4d372a456f34ea9a852503546b48b42.png" alt=""></p></li></ul><h3 id="创建共享"><a href="#创建共享" class="headerlink" title="创建共享"></a>创建共享</h3><ul><li><p>将 Win10 上的文件夹共享出去</p><ul><li><p>文件夹右键属性</p><p><img src="http://artery.thunisoft.com/resFile?name=img/201904/a88ae0da17ff41bc80251c8e24ce8ab7.png" alt=""></p></li></ul></li></ul><ul><li>使用 【\ip\共享文件夹名】 方式访问</li></ul><p><img src="http://artery.thunisoft.com/resFile?name=img/201904/3545dcb9af7648d29bd702f783727ba9.png" alt=""></p><ul><li>在 Linux 中创建挂载点</li></ul><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[root@win-i5dseafvgn7 ~]# cd /mnt/</span><br><span class="line">[root@win-i5dseafvgn7 mnt]# mkdir winlinux</span><br><span class="line">[root@win-i5dseafvgn7 mnt]# ls</span><br><span class="line">sources    winlinux</span><br></pre></td></tr></table></figure><ul><li><p>将 windows 共享挂载到挂载点上</p><ul><li><p>将 windows 共享时选择的用户、密码带入下面的命令中</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@win-ifvgn7 ~]# mount -t cifs //ip/winlinux /mnt/winlinux -o username=用户名,password=密码,vers=2.0</span><br></pre></td></tr></table></figure></li><li><p>windows 与 linux 系统在编码方式上会有区别，Win10 可以设置系统编码为 UTF-8 ，但会出现一些问题</p></li><li>在 mount 时也可以加上编码格式</li></ul></li><li><p>效果<br>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/6f9ab53d31d449e1841b500ba96417e6.gif" alt=""></p></li></ul><hr><h2 id="enjoy-๑•̀ㅂ•́-و✧"><a href="#enjoy-๑•̀ㅂ•́-و✧" class="headerlink" title="enjoy(๑•̀ㅂ•́)و✧"></a>enjoy(๑•̀ㅂ•́)و✧</h2><p><img src="http://artery.thunisoft.com/resFile?name=img/201904/e86b005977dd4ca49ad1aba64bb82f99.gif" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;Hyper-V 是微软的一款虚拟化产品，是微软第一个采用类似 Vmware 和 Citrix 开源 Xen 一样的
+      
+    
+    </summary>
+    
+    
+      <category term="绝" scheme="http://yoursite.com/categories/%E7%BB%9D/"/>
+    
+    
+      <category term="Blog" scheme="http://yoursite.com/tags/Blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>国产动画推荐（一）</title>
+    <link href="http://yoursite.com/2018/10/06/ChinaCartoon1/"/>
+    <id>http://yoursite.com/2018/10/06/ChinaCartoon1/</id>
+    <published>2018-10-06T05:30:07.000Z</published>
+    <updated>2019-12-11T05:49:21.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="《神笔马良》"><a href="#《神笔马良》" class="headerlink" title="《神笔马良》"></a>《神笔马良》</h2><p><img src="http://p2desz41n.bkt.clouddn.com/%E7%A5%9E%E7%AC%94%E9%A9%AC%E8%89%AF.jpg" width="300px"></p><ul><li>年份：1955年</li><li>制作：上海美术电影制片厂</li><li>观看：<a href="https://www.bilibili.com/video/av5653209?from=search&amp;seid=11224009613798015340" target="_blank" rel="noopener">神笔马良</a></li></ul><h2 id="《小蝌蚪找妈妈》"><a href="#《小蝌蚪找妈妈》" class="headerlink" title="《小蝌蚪找妈妈》"></a>《小蝌蚪找妈妈》</h2><p><img src="http://p2desz41n.bkt.clouddn.com/%E5%B0%8F%E8%9D%8C%E8%9A%AA%E6%89%BE%E5%A6%88%E5%A6%88.jpg" width="300px"></p><ul><li>年份：1961年</li><li>制作：上海美术电影制片厂</li><li>观看：<a href="https://www.bilibili.com/bangumi/play/ss2531?from=search&amp;seid=5802904016425146899" target="_blank" rel="noopener">小蝌蚪找妈妈</a></li></ul><h2 id="《三个和尚》"><a href="#《三个和尚》" class="headerlink" title="《三个和尚》"></a>《三个和尚》</h2><p><img src="http://p2desz41n.bkt.clouddn.com/%E4%B8%89%E4%B8%AA%E5%92%8C%E5%B0%9A.jpg" width="300px"></p><ul><li>年份：1981年</li><li>制作：上海美术电影制片厂</li><li>观看：<a href="https://www.bilibili.com/video/av7518024?from=search&amp;seid=7970238565846959723" target="_blank" rel="noopener">三个和尚</a></li></ul><h2 id="《九色鹿》"><a href="#《九色鹿》" class="headerlink" title="《九色鹿》"></a>《九色鹿》</h2><p><img src="http://p2desz41n.bkt.clouddn.com/%E4%B9%9D%E8%89%B2%E9%B9%BF.JPEG" width="300px"></p><ul><li>年份：1981年</li><li>制作：上海美术电影制片厂</li><li>观看：<a href="https://www.bilibili.com/bangumi/play/ss2537/?from=search&amp;seid=12341119407660528258" target="_blank" rel="noopener">九色鹿</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;《神笔马良》&quot;&gt;&lt;a href=&quot;#《神笔马良》&quot; class=&quot;headerlink&quot; title=&quot;《神笔马良》&quot;&gt;&lt;/a&gt;《神笔马良》&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://p2desz41n.bkt.clouddn.com/%E7%A5%9E%E
+      
+    
+    </summary>
+    
+    
+      <category term="幼稚的我" scheme="http://yoursite.com/categories/%E5%B9%BC%E7%A8%9A%E7%9A%84%E6%88%91/"/>
+    
+    
+      <category term="Blog" scheme="http://yoursite.com/tags/Blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux下简单编辑修改文本文件</title>
+    <link href="http://yoursite.com/2018/07/07/Linux-nano-vim/"/>
+    <id>http://yoursite.com/2018/07/07/Linux-nano-vim/</id>
+    <published>2018-07-07T01:48:25.000Z</published>
+    <updated>2019-12-11T05:49:21.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>&emsp;&emsp;Linux下的文本编辑器有很多，此篇文章挑选 nano 和 vim 两个编辑器，简单介绍如何使用这两个编辑器编辑修改文本文件，如项目的配置文件，日志级别的xml文件等。<br>&emsp;&emsp;在很多 Linux 发行版中，都已经内置了nano 与 vim 命令工具，就不再赘述它们的安装过程了。</p><ul><li><a href="https://www.nano-editor.org/" target="_blank" rel="noopener">nano官网</a></li><li><a href="http://www.vim.org/" target="_blank" rel="noopener">vim官网</a></li></ul><hr><h2 id="nano"><a href="#nano" class="headerlink" title="nano"></a>nano</h2><p><img src="http://p2desz41n.bkt.clouddn.com/20180708_nano-ui.JPG" alt="20180708_nano-ui"></p><p>&emsp;&emsp;nano是一个字符终端的文本编辑器，它比另一个我们要介绍的vim简单很多，在nano的终端界面底部可以看到一些常用的快捷键提示，非常适合Linux初学者使用。<br>&emsp;&emsp;nano命令可以打开指定文件进行编辑，默认情况下它会自动断行，即在一行中输入过长的内容时会自动拆分成几行。使用这种方式处理某些文件可能会带来问题，所以使用nano打开文本文件时，建议加上 -w 选项。<br>&emsp;&emsp;nano的帮助文档中，Ctrl键使用”^”标识，Alt键使用”M”标识（Meta）。</p><h3 id="nano-命令语句"><a href="#nano-命令语句" class="headerlink" title="nano 命令语句"></a>nano 命令语句</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nano [OPTIONS] [[+LINE, COLUMN] FILE]...</span><br></pre></td></tr></table></figure><p>&emsp;&emsp;执行 nano 命令，可以加入很多选项，上文中提到的 -w  便是其中一个，如果想知道 nano 命令都支持哪些选项，可以使用 nano -h 命令来查看</p><h3 id="打开、保存、关闭文件"><a href="#打开、保存、关闭文件" class="headerlink" title="打开、保存、关闭文件"></a>打开、保存、关闭文件</h3><ul><li><p><strong>打开</strong> ：如上文所说，打开文件使用 nano -w filename</p></li><li><p><strong>保存</strong> ：使用快捷键 Ctrl+O</p></li><li><p><strong>退出</strong> ：使用快捷键 Ctrl+X</p></li></ul><p>&emsp;&emsp;如果你修改了文件，下面会询问你是否需要保存修改，输入 Y 确认保存，输入 N 则不保存，按 Ctrl+C 取消并返回。<br>&emsp;&emsp;如果输入了 Y 保存，下一步会让你输入保存的文件名，若不需要修改文件名直接回车即可；若要保存新文件或重命名（另存）则输入确认即可。此时 Ctrl+C 同样可以取消并返回。</p><p><img src="http://p2desz41n.bkt.clouddn.com/20180707_nano-open-save-close.gif" alt=""></p><h3 id="移动光标"><a href="#移动光标" class="headerlink" title="移动光标"></a>移动光标</h3><p>&emsp;&emsp;使用方向键移动。</p><p><img src="http://p2desz41n.bkt.clouddn.com/20180707_nano-move-mouse.gif" alt=""></p><h3 id="编辑文本"><a href="#编辑文本" class="headerlink" title="编辑文本"></a>编辑文本</h3><p>&emsp;&emsp;在光标处直接敲击键盘输入即可，会在光标所在字符前增加输入的字符。</p><p><img src="http://p2desz41n.bkt.clouddn.com/20180707_nano-edit.gif" alt=""></p><h3 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h3><p>&emsp;&emsp;使用快捷键 <code>Crtl+W</code> 输入你要搜索的关键字，回车确认。会定位到第一个匹配的文本，可使用 <code>Alt+W</code> 来定位下一个匹配的文本。</p><p><img src="http://p2desz41n.bkt.clouddn.com/20180707_nano-search.gif" alt=""></p><h3 id="复制、剪切、粘贴"><a href="#复制、剪切、粘贴" class="headerlink" title="复制、剪切、粘贴"></a>复制、剪切、粘贴</h3><ul><li><p><strong>复制</strong> ：Alt+6 （单独使用复制一行）</p></li><li><p><strong>剪切</strong> ：Ctrl+K （单独使用剪切一行）</p></li><li><p><strong>粘贴</strong> ：Ctrl+U</p></li></ul><p><img src="http://p2desz41n.bkt.clouddn.com/20180707_nano-copy-cut-past.gif" alt=""></p><h3 id="复制、剪切某部分"><a href="#复制、剪切某部分" class="headerlink" title="复制、剪切某部分"></a>复制、剪切某部分</h3><p>&emsp;&emsp;方向键将光标移动到文本开头，使用 <code>Alt+A</code> 标记开头，使用方向键移动光标到文本末尾，此时选中的文本会反白，使用 <code>Alt+6</code> 复制 或 <code>Ctrl+K</code> 剪切。使用 <code>Ctrl+U</code> 来粘贴。<br>&emsp;&emsp;<code>Alt+A</code> 一次开始标记，再执行<code>Alt+A</code> 取消标记。</p><p><img src="http://p2desz41n.bkt.clouddn.com/20180707_nano-copy-cut-past-sub.gif" alt=""></p><p><strong>想了解更多操作，可使用快捷键 <code>Ctlr+G</code> 查看其它功能。 </strong></p><hr><h2 id="vim"><a href="#vim" class="headerlink" title="vim"></a>vim</h2><p><img src="http://p2desz41n.bkt.clouddn.com/20180708_vim-ui.JPG" alt="20180708_vim-ui"></p><h3 id="打开、保存、关闭-文件"><a href="#打开、保存、关闭-文件" class="headerlink" title="打开、保存、关闭 文件"></a>打开、保存、关闭 文件</h3><ul><li><code>vi filename</code>  打开filename文件</li><li><code>vi +n filename</code>  打开文件，并将光标置于第n行首</li><li><code>vi + filename</code>  打开文件，并将光标置于最后一行首</li></ul><p><img src="http://p2desz41n.bkt.clouddn.com/20180707_vi-open.gif" alt=""></p><ul><li><code>:w</code> 保存文件</li><li><code>:w filename</code> 保存至filename文件</li></ul><p><img src="http://p2desz41n.bkt.clouddn.com/20180707_vi-save.gif" alt=""></p><ul><li><code>:n1,n2 w filename</code> 将n1到n2行的内容另存为filename文件</li></ul><p><img src="http://p2desz41n.bkt.clouddn.com/20180707_vi-save-as.gif" alt=""></p><ul><li><code>:q</code>  退出编辑器</li><li><code>:q!</code>  强制退出编辑器，且不保存</li><li><code>:wq</code>  退出编辑器，并保存文件</li></ul><h3 id="移动光标-1"><a href="#移动光标-1" class="headerlink" title="移动光标"></a>移动光标</h3><ul><li><p><code>h、j、k、l</code>  左、下、上、右</p></li><li><p><code>zz</code>  把光标下的文字置于屏幕中央</p></li><li><p><code>Ctrl+b</code>  屏幕往后移动一页。</p></li><li><p><code>Ctrl+f</code>  屏幕往前移动一页。</p></li></ul><h3 id="插入文本或行"><a href="#插入文本或行" class="headerlink" title="插入文本或行"></a>插入文本或行</h3><ul><li><code>a</code>  在当前光标位置的右侧添加文本</li></ul><p><img src="http://p2desz41n.bkt.clouddn.com/20180707_vi-insert-a.gif" alt=""></p><ul><li><code>i</code>  在当前光标位置的左侧添加文本</li></ul><p><img src="http://p2desz41n.bkt.clouddn.com/20180707_vi-insert-i.gif" alt=""></p><ul><li><code>A</code>  在当前行的末尾位置添加文本</li></ul><p><img src="http://p2desz41n.bkt.clouddn.com/20180707_vi-insert-aA.gif" alt=""></p><ul><li><code>I</code>  在当前行的开始处添加文本（非空字符的行首)</li></ul><p><img src="http://p2desz41n.bkt.clouddn.com/20180707_vi-insert-ii.gif" alt=""></p><ul><li><code>O</code>  在当前行的上面新建一行</li></ul><p><img src="http://p2desz41n.bkt.clouddn.com/20180707_vi-insert-oO.gif" alt=""></p><ul><li><code>o</code>  在当前行的下面新建一行</li></ul><p><img src="http://p2desz41n.bkt.clouddn.com/20180707_vi-insert-o.gif" alt=""></p><h3 id="删除、恢复字符或行"><a href="#删除、恢复字符或行" class="headerlink" title="删除、恢复字符或行"></a>删除、恢复字符或行</h3><ul><li><code>x</code>  删除当前字符</li></ul><p><img src="http://p2desz41n.bkt.clouddn.com/20180707_vi-x.gif" alt=""></p><ul><li><code>dd</code>  删除当前行</li></ul><p><img src="http://p2desz41n.bkt.clouddn.com/20180707_vi-dd.gif" alt=""></p><ul><li><code>u</code>   撤销上一步操作</li></ul><p><img src="http://p2desz41n.bkt.clouddn.com/20180707_vi-u.gif" alt=""></p><h3 id="搜索-1"><a href="#搜索-1" class="headerlink" title="搜索"></a>搜索</h3><ul><li><code>/.*</code>  向光标下搜索</li></ul><p><img src="http://p2desz41n.bkt.clouddn.com/20180707_vi-search-j.gif" alt=""></p><ul><li><code>?.*</code>  向光标上搜索</li></ul><p><img src="http://p2desz41n.bkt.clouddn.com/20180707_vi-search-k.gif" alt=""></p><ul><li><p><code>n</code>  向下搜索前一个搜索动作</p></li><li><p><code>N</code>向上搜索前一个搜索动作</p></li></ul><p><img src="http://p2desz41n.bkt.clouddn.com/20180707_vi-n-N.gif" alt="20180707_vi-n-N"></p><h3 id="替换"><a href="#替换" class="headerlink" title="替换"></a>替换</h3><ul><li><code>:s/old/new</code>  用new替换行中首次出现的old</li></ul><p><img src="http://p2desz41n.bkt.clouddn.com/20180707_vi-son.gif" alt=""></p><ul><li><code>:s/old/new/g</code>  用new替换行中所有的old</li></ul><p><img src="http://p2desz41n.bkt.clouddn.com/20180707_vi-song.gif" alt=""></p><ul><li><code>:n,m s/old/new/g</code>  用new替换从n到m行里所有的old</li></ul><p><img src="http://p2desz41n.bkt.clouddn.com/20180707_vi-nong.gif" alt=""></p><ul><li><code>:%s/old/new/g</code>  用new替换当前文件里所有的old</li></ul><p><img src="http://p2desz41n.bkt.clouddn.com/20180707_vi-ssong.gif" alt=""></p><ul><li><code>R</code>  替换、覆盖当前光标位置及后面的若干文本</li></ul><p><img src="http://p2desz41n.bkt.clouddn.com/20180707_vi-R.gif" alt=""></p><ul><li><code>r</code>  取代光标所在处的单个字符</li></ul><p><img src="http://p2desz41n.bkt.clouddn.com/20180707_vi-rr.gif" alt=""></p><h3 id="跳转到制定行"><a href="#跳转到制定行" class="headerlink" title="跳转到制定行"></a>跳转到制定行</h3><ul><li><code>gg</code>  跳到第一行</li></ul><p><img src="http://p2desz41n.bkt.clouddn.com/20180707_vim-gg.gif" alt="20180707_vim-gg"></p><ul><li><code>nG</code>  跳到行号为n的行</li></ul><p><img src="http://p2desz41n.bkt.clouddn.com/20180707_vi-nG.gif" alt="20180707_vi-nG"></p><ul><li><code>G</code>  跳转至文件底部</li></ul><p><img src="http://p2desz41n.bkt.clouddn.com/20180707_vi-G.gif" alt="20180707_vi-G"></p><h3 id="复制、粘贴"><a href="#复制、粘贴" class="headerlink" title="复制、粘贴"></a>复制、粘贴</h3><ul><li><code>yy</code>  复制当前行</li><li><code>p</code>  粘贴剪切板里的内容在光标后</li></ul><h3 id="vi-选项"><a href="#vi-选项" class="headerlink" title="vi 选项"></a>vi 选项</h3><ul><li><code>:set nu</code>  显示行号</li><li><code>:set nonu</code>  不显示行</li></ul><p><img src="http://p2desz41n.bkt.clouddn.com/20170707_vi-set-nu.gif" alt="20170707_vi-set-nu"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&amp;emsp;&amp;emsp;Linux下的文本编辑器有很多，此篇文章挑选 nano 和 vim 两个编辑器，简单介绍如何使用这两个编辑器编辑修改文本文件，如项目的配置文件，日志级别的xml文件等。&lt;br&gt;&amp;emsp;&amp;emsp;在很多 Linux 发行版中，都已经内置了nano
+      
+    
+    </summary>
+    
+    
+      <category term="绝" scheme="http://yoursite.com/categories/%E7%BB%9D/"/>
+    
+    
+      <category term="Blog" scheme="http://yoursite.com/tags/Blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>📄 记一次长途骑行</title>
+    <link href="http://yoursite.com/2018/07/01/%E8%AE%B0%E4%B8%80%E6%AC%A1%E9%95%BF%E9%80%94%E9%AA%91%E8%A1%8C/"/>
+    <id>http://yoursite.com/2018/07/01/%E8%AE%B0%E4%B8%80%E6%AC%A1%E9%95%BF%E9%80%94%E9%AA%91%E8%A1%8C/</id>
+    <published>2018-07-01T15:37:08.000Z</published>
+    <updated>2019-12-11T05:49:21.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://p2desz41n.bkt.clouddn.com/20170701_CyclingDaLian2ShanHaiGuan.png" alt="路线"></p><p><strong>真的是…… 被自己感动</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;http://p2desz41n.bkt.clouddn.com/20170701_CyclingDaLian2ShanHaiGuan.png&quot; alt=&quot;路线&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;真的是…… 被自己感动&lt;/strong&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="SeeU" scheme="http://yoursite.com/categories/SeeU/"/>
+    
+    
+      <category term="Blog" scheme="http://yoursite.com/tags/Blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>📄 记账一个月</title>
+    <link href="http://yoursite.com/2018/03/03/keepAccount/"/>
+    <id>http://yoursite.com/2018/03/03/keepAccount/</id>
+    <published>2018-03-03T08:54:33.000Z</published>
+    <updated>2019-12-11T05:49:21.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://p2desz41n.bkt.clouddn.com/moneywiz_all_devices.png"></p><p>记账并不能帮你省钱，但是为什么还需要记账呢？</p><p>每到岁尾年关，人们或多或少的都会对过往一年进行总结，对未来进行展望。支付宝这类支付工具有时还会很煽情的为你展示过去的一年你都花了多少钱，买了多少东西。有时候人们不止会感叹“时间都去哪了？“ 还会哀嚎“我的钱呢？”，就这样三块五块十块八毛，钱也不知道都花到哪里去了。</p><hr><p>在之前的记账过程里，使用过纸笔，记账 App 。</p><p>之前记账对我来说只是特殊时期的财产管理手段。比如说刚毕业到开始工作的前6个月时间里，没有资金的积累，就需要按需花费，实行“计划经济”。</p><p>当工作1年之后有了一些积累，“日益增长的物质文化需求与薪资”之间产生矛盾时，又需要记录花销，但是这都是特别粗的记录。</p><p>元旦假期的时候听了一期关于理财的播客。我觉得记账是一个很好的理财开始。</p><p>播客里的“安利”网上的推荐，我选择了 MoneyWiz 这个 App 作为记账软件。选择什么 App 不重要，重要的是开始实施，进行记录。</p><p><img src="http://p2desz41n.bkt.clouddn.com/MoneyWiz_logo.png"></p><h2 id="功能介绍"><a href="#功能介绍" class="headerlink" title="功能介绍"></a>功能介绍</h2><ul><li>控制面板</li><li>账户</li><li>预算</li><li>预定</li><li>报表</li><li>设置</li></ul><p><img src="http://p2desz41n.bkt.clouddn.com/moneywiz2.jpg" height="600px"></p><h3 id="账户"><a href="#账户" class="headerlink" title="账户"></a>账户</h3><p>最开始使用需要新建账户，每次支出、收入都会对新建的这些账户就行操作。</p><p><img src="http://p2desz41n.bkt.clouddn.com/moneywiz1.jpg" height="600px"></p><h3 id="控制面板"><a href="#控制面板" class="headerlink" title="控制面板"></a>控制面板</h3><p>添加一些小组件来快速查看</p><p><img src="http://p2desz41n.bkt.clouddn.com/moneywiz6.jpg" height="600px"></p><h3 id="预算、预定"><a href="#预算、预定" class="headerlink" title="预算、预定"></a>预算、预定</h3><p>最开始我对这两个概念还是很混乱的。网上查找了一些资料。可能使用英文表达能更好理解一些。</p><ul><li>预算 Budgets，要花费多少钱。比如一个月的伙食费、一个月交通费用。</li><li>预定 Scheduled，未来某个时间点会花费的钱。比如每月的房租、每月的工资到账。</li></ul><p>搞清楚了这两个概念，我给自己分别分配了如下的项目</p><ul><li>预算<ul><li>伙食费</li><li>电影费</li></ul></li><li>预定<ul><li>工资</li><li>分期付款</li><li>房租</li></ul></li></ul><p><img src="http://p2desz41n.bkt.clouddn.com/moneywiz3.jpg" width="80%"></p><h3 id="报表"><a href="#报表" class="headerlink" title="报表"></a>报表</h3><p>MoneyWiz 的强大之处应该就在这里了吧，这些报表门类感觉非常的“金融、会记”。</p><p><img src="http://p2desz41n.bkt.clouddn.com/moneywiz4.jpg" height="1200px"></p><h3 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h3><p>设置账户的信息，消费、收入的分类，数据同步等等一些配置。</p><p><img src="http://p2desz41n.bkt.clouddn.com/moneywiz5.png" height="600px"></p><h4 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h4><p>MoneyWiz 分类中有默认的一些费用和收入的分类，费用的分类我是完全根据自己情况重新编辑了。</p><p>收入分类基本上使用默认的。</p><p>（真的是超级喜欢使用 emoji ）</p><p><img src="http://p2desz41n.bkt.clouddn.com/moneywiz7.jpg" width="80%"></p><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>每次消费之后，记录一笔账目。等你记录的多了，某些消费是重复的，比如午餐等等。当你在记录这一类账目的时候，会有智能的自动补全功能。这样提高了记录速度，降低了记录的负担。</p><h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>这篇文章更像是一篇 App 介绍，使用了一个月大概了解了用法，一些进阶的功能还需要摸索研究，边用边学吧。</p><p>最重要的是，建立了新的概念，这是在以前用过的 App 里没有接触到或者没主意到的。预算与预定对个人来说是非常好的。</p><p>记账有什么用呢？我对记账的需求是</p><ul><li>知道钱花到了哪</li><li>预算有根据</li></ul><p>事实上记账与否并不重要。</p><blockquote><p>做人最重要就是开心。</p></blockquote><p>* 题头图片与logo 来自 MoneyWiz 官网</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;http://p2desz41n.bkt.clouddn.com/moneywiz_all_devices.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;记账并不能帮你省钱，但是为什么还需要记账呢？&lt;/p&gt;
+&lt;p&gt;每到岁尾年关，人们或多或少的都会对过往一年进行总结，对未来进
+      
+    
+    </summary>
+    
+    
+      <category term="杂" scheme="http://yoursite.com/categories/%E6%9D%82/"/>
+    
+    
+      <category term="Blog" scheme="http://yoursite.com/tags/Blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>📄 关于“韦编三绝”花名的故事</title>
+    <link href="http://yoursite.com/2018/02/12/weibiansanjue/"/>
+    <id>http://yoursite.com/2018/02/12/weibiansanjue/</id>
+    <published>2018-02-12T02:34:21.000Z</published>
+    <updated>2019-12-11T05:49:21.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="故事"><a href="#故事" class="headerlink" title="故事"></a>故事</h2><p>上初中那会儿，无意中看到了我哥语文考试的一本参考资料，里面有一些成语词汇的辨析，语文考试中总有那么一些题会考你这个成语用的对不对，是不是合适。无意的一瞟，看到个“韦编三绝”这个成语，因为姓韦，所以对是这个字开头的成语起了兴趣，看了看意思，和孔子有关，又和我家乡有点联系，嗯嗯，不错不错，有趣有趣。</p><p>不知道什么时候在学校的机房里申请了第一个 QQ 号，要起一个昵称，也是最初的一眼之缘。就以这个名字作为 QQ 的昵称了。之后也修改过几次。简体变繁体，非主流火星文，颜文字。把 3 变成😘。</p><ul><li>韦编三绝</li><li>韦编3绝</li><li>韋編三絕</li><li>韦编(￣3￣)绝</li></ul><p>之后再有昵称之类的也就一直沿用这个名字了。期间可能会遇到名称被占用的，就使用繁体或者把三改成阿拉伯数字，或者加一些后缀。</p><h2 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h2><ul><li>读音</li></ul><table><thead><tr><th style="text-align:center">wéi</th><th style="text-align:center">biān</th><th style="text-align:center">sān</th><th style="text-align:center">jué</th></tr></thead><tbody><tr><td style="text-align:center"><strong>韦</strong></td><td style="text-align:center">编</td><td style="text-align:center">三</td><td style="text-align:center">绝</td></tr></tbody></table><ul><li><p>释义</p><blockquote><p>韦编：用熟牛皮绳把竹简编联起来；</p><p>三：概数，表示多次；</p><p>绝：断。编连竹简的皮绳断了三次。比喻读书勤奋</p></blockquote></li><li><p>出自 西汉·司马迁《史记·孔子世家》</p><blockquote><p> 读《易》，韦编三绝。</p></blockquote></li><li><p>典故</p><blockquote><p>春秋时，书主要是以竹子为材料制造的，把竹子破成一根根竹签，称为竹“简”。一部书要用许多竹简，这些竹简须用牢固的绳子之类的东西编连起来才能阅读。像《易》这样的书，当然是由许许多多竹简编连起来的，因此有相当的重量。</p><p>孔丘花了很大的精力，把《易》全部读了一遍，基本上了解了它 的内容。不久又读第二遍，掌握了它的基本要点。接着，他又读第三 遍，对其中的精神、实质有了透彻的理解。在这以后，为了深入研究这部书，又为了给弟子讲解，他不知翻阅了多少遍。这样读来读去，把串连竹简的牛皮带子也给磨断了几次，不得不多次换上新的再使用。 即使读到了这样的地步，孔子还谦虚地说：“假如让我多活几年，我就可以完全掌握《易》的文与质了。</p></blockquote></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;故事&quot;&gt;&lt;a href=&quot;#故事&quot; class=&quot;headerlink&quot; title=&quot;故事&quot;&gt;&lt;/a&gt;故事&lt;/h2&gt;&lt;p&gt;上初中那会儿，无意中看到了我哥语文考试的一本参考资料，里面有一些成语词汇的辨析，语文考试中总有那么一些题会考你这个成语用的对不对，是不是合适
+      
+    
+    </summary>
+    
+    
+      <category term="Log" scheme="http://yoursite.com/categories/Log/"/>
+    
+    
+      <category term="Blog" scheme="http://yoursite.com/tags/Blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>📄 冷冷夜里的一瞬间</title>
+    <link href="http://yoursite.com/2018/02/04/moment20180204/"/>
+    <id>http://yoursite.com/2018/02/04/moment20180204/</id>
+    <published>2018-02-04T14:12:19.000Z</published>
+    <updated>2019-12-11T05:49:21.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>大风起兮</p><p>解裤腰</p><p>风华正茂</p><p>迎风尿</p><p>仰天一声啸</p><p>别哭别笑</p><p>哦……</p><hr><p>随便发发，押韵押韵。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;大风起兮&lt;/p&gt;
+&lt;p&gt;解裤腰&lt;/p&gt;
+&lt;p&gt;风华正茂&lt;/p&gt;
+&lt;p&gt;迎风尿&lt;/p&gt;
+&lt;p&gt;仰天一声啸&lt;/p&gt;
+&lt;p&gt;别哭别笑&lt;/p&gt;
+&lt;p&gt;哦……&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;随便发发，押韵押韵。&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="xxxx的一瞬间" scheme="http://yoursite.com/categories/xxxx%E7%9A%84%E4%B8%80%E7%9E%AC%E9%97%B4/"/>
+    
+    
+      <category term="Blog" scheme="http://yoursite.com/tags/Blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>📄 2017年观剧清单</title>
+    <link href="http://yoursite.com/2018/01/14/2017TVList/"/>
+    <id>http://yoursite.com/2018/01/14/2017TVList/</id>
+    <published>2018-01-13T16:35:32.000Z</published>
+    <updated>2019-12-11T05:49:21.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="《三生三世十里桃花》"><a href="#《三生三世十里桃花》" class="headerlink" title="《三生三世十里桃花》"></a>《三生三世十里桃花》</h1><p><img src="http://p2desz41n.bkt.clouddn.com/tvlist2017all-%E4%B8%89%E7%94%9F%E4%B8%89%E4%B8%96%E5%8D%81%E9%87%8C%E6%A1%83%E8%8A%B1.jpg" height="300px"></p><h1 id="《射雕英雄传》2017新版"><a href="#《射雕英雄传》2017新版" class="headerlink" title="《射雕英雄传》2017新版"></a>《射雕英雄传》2017新版</h1><p><img src="http://p2desz41n.bkt.clouddn.com/tvlist2017all-%E5%B0%84%E9%9B%95%E8%8B%B1%E9%9B%84%E4%BC%A02017.jpg" width="500px"></p><h1 id="《人民的名义》"><a href="#《人民的名义》" class="headerlink" title="《人民的名义》"></a>《人民的名义》</h1><p><img src="http://p2desz41n.bkt.clouddn.com/tvlist2017all-%E4%BA%BA%E6%B0%91%E7%9A%84%E5%90%8D%E4%B9%89.jpg" width="500px"></p><h1 id="《我命中注定的人》日剧"><a href="#《我命中注定的人》日剧" class="headerlink" title="《我命中注定的人》日剧"></a>《我命中注定的人》日剧</h1><p><img src="http://p2desz41n.bkt.clouddn.com/tvlist2017all-%E6%88%91%E5%91%BD%E4%B8%AD%E6%B3%A8%E5%AE%9A%E7%9A%84%E4%BA%BA.jpg" width="500px"></p><h1 id="《我的前半生》"><a href="#《我的前半生》" class="headerlink" title="《我的前半生》"></a>《我的前半生》</h1><p><img src="http://p2desz41n.bkt.clouddn.com/tvlist2017all-%E6%88%91%E7%9A%84%E5%89%8D%E5%8D%8A%E7%94%9F.jpg" width="500px"></p><h1 id="《西部世界》美剧"><a href="#《西部世界》美剧" class="headerlink" title="《西部世界》美剧"></a>《西部世界》美剧</h1><p><img src="http://p2desz41n.bkt.clouddn.com/tvlist2017all-WestWorld.jpg" height="300px"></p><hr><p>* 海报图片来自豆瓣网</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;《三生三世十里桃花》&quot;&gt;&lt;a href=&quot;#《三生三世十里桃花》&quot; class=&quot;headerlink&quot; title=&quot;《三生三世十里桃花》&quot;&gt;&lt;/a&gt;《三生三世十里桃花》&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://p2desz41n.bkt.clouddn
+      
+    
+    </summary>
+    
+    
+      <category term="剧单" scheme="http://yoursite.com/categories/%E5%89%A7%E5%8D%95/"/>
+    
+    
+      <category term="Blog" scheme="http://yoursite.com/tags/Blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>📄 2017年观影清单</title>
+    <link href="http://yoursite.com/2018/01/07/2017MovieList/"/>
+    <id>http://yoursite.com/2018/01/07/2017MovieList/</id>
+    <published>2018-01-07T15:55:54.000Z</published>
+    <updated>2019-12-11T05:49:21.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="1月"><a href="#1月" class="headerlink" title="1月"></a>1月</h1><ul><li>星球大战外传 – 侠盗一号</li><li>大叔，我爱你</li><li>三少爷的剑</li><li>太空旅客</li><li>28岁未成年</li><li>大鱼海棠</li><li>降临</li></ul><hr><h1 id="2月"><a href="#2月" class="headerlink" title="2月"></a>2月</h1><ul><li>乘风破浪</li><li>极限特工 – 终极回归</li><li>爱乐之城</li></ul><hr><h1 id="3月"><a href="#3月" class="headerlink" title="3月"></a>3月</h1><ul><li>金刚狼3 – 殊死一战</li><li>美女与野兽</li><li>金刚 – 骷髅岛</li></ul><hr><h1 id="4月"><a href="#4月" class="headerlink" title="4月"></a>4月</h1><ul><li>速度与激情8</li><li>傲娇与偏见</li></ul><hr><h1 id="5月"><a href="#5月" class="headerlink" title="5月"></a>5月</h1><ul><li>银河护卫队 2</li><li>超凡战队</li><li>异星觉醒</li><li>加勒比海盗5 – 死无对证</li><li>“吃吃”的爱</li></ul><hr><h1 id="6月"><a href="#6月" class="headerlink" title="6月"></a>6月</h1><ul><li>神奇女侠</li><li>新木乃伊</li><li>异形 — 契约</li><li>变形金刚5 – 最后的骑士</li></ul><hr><h1 id="7月"><a href="#7月" class="headerlink" title="7月"></a>7月</h1><ul><li>大护法</li><li>绣春刀 – 修罗战场</li><li>战狼2</li></ul><hr><h1 id="8月"><a href="#8月" class="headerlink" title="8月"></a>8月</h1><ul><li>心理罪</li><li>侠盗联盟</li><li>杀破狼 – 贪狼</li><li>二十二</li><li>星际特工 – 千星之城</li><li>极盗车神</li></ul><hr><h1 id="9月"><a href="#9月" class="headerlink" title="9月"></a>9月</h1><ul><li>敦刻尔克</li><li>蜘蛛侠 – 英雄归来</li><li>声之形 </li><li>猩球崛起3 – 终极之战</li><li>王牌保镖</li><li>毕业生生存指南</li><li>英伦对决</li></ul><hr><h1 id="10月"><a href="#10月" class="headerlink" title="10月"></a>10月</h1><ul><li>羞羞的铁拳</li><li>天才枪手</li><li>王牌特工2 – 黄金圈</li><li>缝纫机乐队</li><li>银翼杀手2049</li></ul><hr><h1 id="11月"><a href="#11月" class="headerlink" title="11月"></a>11月</h1><ul><li>正义联盟</li></ul><hr><h1 id="12月"><a href="#12月" class="headerlink" title="12月"></a>12月</h1><ul><li>奇门遁甲</li><li>机械之血</li><li>拆弹专家</li></ul><hr><h1 id="年度喜爱"><a href="#年度喜爱" class="headerlink" title="年度喜爱"></a>年度喜爱</h1><ol><li>降临</li><li>神奇女侠</li><li>异形 – 契约</li><li>绣春刀 – 修罗战场</li><li>战狼2</li><li>星际特工 – 千星之城</li><li>极盗车神</li><li>蜘蛛侠 – 英雄归来</li><li>天才枪手</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;1月&quot;&gt;&lt;a href=&quot;#1月&quot; class=&quot;headerlink&quot; title=&quot;1月&quot;&gt;&lt;/a&gt;1月&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;星球大战外传 – 侠盗一号&lt;/li&gt;
+&lt;li&gt;大叔，我爱你&lt;/li&gt;
+&lt;li&gt;三少爷的剑&lt;/li&gt;
+&lt;li&gt;太空旅客&lt;/li&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="影单" scheme="http://yoursite.com/categories/%E5%BD%B1%E5%8D%95/"/>
+    
+    
+      <category term="Blog" scheme="http://yoursite.com/tags/Blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>📄 2017年阅读清单</title>
+    <link href="http://yoursite.com/2018/01/07/2017BookList/"/>
+    <id>http://yoursite.com/2018/01/07/2017BookList/</id>
+    <published>2018-01-07T05:16:07.000Z</published>
+    <updated>2019-12-11T05:49:21.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="《乌合之众》"><a href="#《乌合之众》" class="headerlink" title="《乌合之众》"></a>《乌合之众》</h1><p><img src="http://p2desz41n.bkt.clouddn.com/booklist2017all-TheCrowdAStudyOfThePopularMind.jpg" height="250px"></p><ul><li>作者：（法国）古斯塔夫•勒庞（Gustave Le Bon） </li><li>译者：戴光年</li><li>出版社：新世界出版社</li><li><p>平台：Kindle 电子书</p><p>虽然很早就看到过这个书名，单我总以为这可能是管理学方面的书，并没有什么兴趣拿来读。偶然间看到了这书的简介，才有了些好奇心。<br>以前总不理解，为什么指导思想和一些政治手段那么重要，现在草草有些明白了。</p></li></ul><h1 id="《朱元璋传》"><a href="#《朱元璋传》" class="headerlink" title="《朱元璋传》"></a>《朱元璋传》</h1><p><img src="http://p2desz41n.bkt.clouddn.com/booklist2017all-ZhuYuanZhangZhuan.jpg" height="250px"></p><ul><li>作者：吴晗</li><li>出版社：北京理工大学出版社</li><li>平台：Kindle 电子书</li></ul><h1 id="《吴晗论明史（上中下）》"><a href="#《吴晗论明史（上中下）》" class="headerlink" title="《吴晗论明史（上中下）》"></a>《吴晗论明史（上中下）》</h1><p><img src="http://p2desz41n.bkt.clouddn.com/booklist2017all-WuHanLunMingShi.jpg" height="250px"></p><ul><li>作者：吴晗</li><li>出版社：北京理工大学出版社</li><li>平台：Kindle 电子书</li></ul><h1 id="《张居正大传（上）》"><a href="#《张居正大传（上）》" class="headerlink" title="《张居正大传（上）》"></a>《张居正大传（上）》</h1><p><img src="http://p2desz41n.bkt.clouddn.com/booklist2017all-ZhangJuZhengDaZhuan.jpg" height="250px"></p><ul><li>作者：朱东润</li><li>出版社：北京理工大学出版社</li><li>平台：Kindle 电子书</li></ul><hr><h1 id="《MySQL数据库应用从入门到精通》"><a href="#《MySQL数据库应用从入门到精通》" class="headerlink" title="《MySQL数据库应用从入门到精通》"></a>《MySQL数据库应用从入门到精通》</h1><p><img src="http://p2desz41n.bkt.clouddn.com/booklist2017all-MySQL.jpg" height="250px"></p><ul><li><p>作者：王飞飞，崔洋，贺亚茹</p></li><li><p>出版社：中国铁道出版社</p></li><li><p>平台：Kindle 电子书</p><p>一直想找一本书系统的来梳理一下已知的 MySQL 知识，手头正好有这么一本实体书，这本书还是挺厚的，里面包含了命令行中的执行还有使用数据库客户端执行。客户端部分我是排除掉没有看的。这本书有个优点就是实例挺多，适合多动手执行操作一下。</p></li></ul><h1 id="《Netty-实战》"><a href="#《Netty-实战》" class="headerlink" title="《Netty 实战》"></a>《Netty 实战》</h1><p><img src="http://p2desz41n.bkt.clouddn.com/booklist2017all-NettyInAction.jpg" height="250px"></p><ul><li>作者：诺曼·毛瑞尔 (Norman Maurer)，马文·艾伦·沃尔夫泰尔 (Marvin Allen Wolfthal)</li><li>译者：何品</li><li>出版社：人民邮电出版社</li><li><p>平台：纸质书</p><p>关于 Nety 的中文书，能买到的应该就只有这本和《Netty权威指南》，最开始了解到的是国人写的权威指南这本，后来在网上的帖子和同事那里知道之后会有一本翻译的外文书。选这本来看，全是因为书薄。虽然硬生生的看完了，但仅仅是建立了一个概念而已。    </p></li></ul><h1 id="《Windows-PowerShell-实战指南》"><a href="#《Windows-PowerShell-实战指南》" class="headerlink" title="《Windows PowerShell 实战指南》"></a>《Windows PowerShell 实战指南》</h1><p><img src="http://p2desz41n.bkt.clouddn.com/booklist2017all-LearnWindowsPowershellInAMonthOfLunches.jpg" height="250px"></p><ul><li>作者： 道·琼斯（Don Jones），杰弗瑞·希克斯（Jeffery Hicks）</li><li>译者：宋沄剑，何文通，黄钊吉，陈畅亮</li><li>出版社：人民邮电出版社</li><li><p>平台：纸质书</p><p>这本书每个章节都很短，就几页，很实用，非常适合平时工作充电使用，这也是这本书写作的目的。这本书并没有读完，但也帮助很大。</p></li></ul><hr><p>* 图片来自亚马逊中国与异步社区</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;《乌合之众》&quot;&gt;&lt;a href=&quot;#《乌合之众》&quot; class=&quot;headerlink&quot; title=&quot;《乌合之众》&quot;&gt;&lt;/a&gt;《乌合之众》&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://p2desz41n.bkt.clouddn.com/booklist201
+      
+    
+    </summary>
+    
+    
+      <category term="书单" scheme="http://yoursite.com/categories/%E4%B9%A6%E5%8D%95/"/>
+    
+    
+      <category term="Blog" scheme="http://yoursite.com/tags/Blog/"/>
+    
+  </entry>
+  
+</feed>
