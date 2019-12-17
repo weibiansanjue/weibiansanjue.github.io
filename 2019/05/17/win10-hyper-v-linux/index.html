@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.ico?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/favicon.ico?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Blog," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="简介 Hyper-V 是微软的一款虚拟化产品，是微软第一个采用类似 Vmware 和 Citrix 开源 Xen 一样的基于 hypervisor 的技术。这也意味着微软会更加直接地与市场先行者 VMware 展开竞争，但竞争的方式会有所不同。 Hyper-V 是微软提出的一种系统管理程序虚拟化技术，能够实现桌面虚拟化。Hyper-V 最初预定在2008年第一季度，与 Windows Server">
+<meta name="keywords" content="Blog">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Win10 中使用 Hyper-V 创建 Linux 虚拟机">
+<meta property="og:url" content="http://yoursite.com/2019/05/17/win10-hyper-v-linux/index.html">
+<meta property="og:site_name" content="(ง •̀₃•́)ง">
+<meta property="og:description" content="简介 Hyper-V 是微软的一款虚拟化产品，是微软第一个采用类似 Vmware 和 Citrix 开源 Xen 一样的基于 hypervisor 的技术。这也意味着微软会更加直接地与市场先行者 VMware 展开竞争，但竞争的方式会有所不同。 Hyper-V 是微软提出的一种系统管理程序虚拟化技术，能够实现桌面虚拟化。Hyper-V 最初预定在2008年第一季度，与 Windows Server">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://artery.thunisoft.com/resFile?name=img/201904/56c70871f3a943399913a614505d2154.png">
+<meta property="og:image" content="http://artery.thunisoft.com/resFile?name=img/201904/cc83620011354aa4a116865b80ac2174.png">
+<meta property="og:image" content="http://artery.thunisoft.com/resFile?name=img/201904/45b5cf9f310e4555a5422011535e7074.png">
+<meta property="og:image" content="http://artery.thunisoft.com/resFile?name=img/201904/1986b3c698d14bc88e7c9ea4ed10fefd.png">
+<meta property="og:image" content="http://artery.thunisoft.com/resFile?name=img/201904/5fcbd8e5807b40a0824424a3547113ca.png">
+<meta property="og:image" content="http://artery.thunisoft.com/resFile?name=img/201904/36a3a5587ce44315b04403ddfba3402b.png">
+<meta property="og:image" content="http://artery.thunisoft.com/resFile?name=img/201904/82af6435674e40baa58a411dd992dfe6.png">
+<meta property="og:image" content="http://artery.thunisoft.com/resFile?name=img/201904/ca5a22f2cd0643b6a5bddf93a4140eb7.png">
+<meta property="og:image" content="http://artery.thunisoft.com/resFile?name=img/201904/253c1f3a2bab4a4c9e0512b133eda3c2.png">
+<meta property="og:image" content="http://artery.thunisoft.com/resFile?name=img/201904/8ab953e32a594257bad65fc1deb45ab7.png">
+<meta property="og:image" content="http://artery.thunisoft.com/resFile?name=img/201904/79c526a661514d5f827b4c35032d1bda.png">
+<meta property="og:image" content="http://artery.thunisoft.com/resFile?name=img/201904/372195c40cb94b7396b5184adf5ec784.png">
+<meta property="og:image" content="http://artery.thunisoft.com/resFile?name=img/201904/b964827cf0014a448ad213ec1d4fe246.png">
+<meta property="og:image" content="http://artery.thunisoft.com/resFile?name=img/201904/c496fe052fc4446dae3488bc20f32d3c.png">
+<meta property="og:image" content="http://artery.thunisoft.com/resFile?name=img/201904/6ceb41f94c444bf093529033ce9a1a88.png">
+<meta property="og:image" content="http://artery.thunisoft.com/resFile?name=img/201904/5ff8c1549e354c47bbad086488527ce6.png">
+<meta property="og:image" content="http://artery.thunisoft.com/resFile?name=img/201904/38c8a8bb136a4fae85a466bb479ed047.png">
+<meta property="og:image" content="http://artery.thunisoft.com/resFile?name=img/201904/c3ea6d8d8ad945f78efed0cde703f028.png">
+<meta property="og:image" content="http://artery.thunisoft.com/resFile?name=img/201904/1d7de490ef4e4123b9f9cd302b25778b.png">
+<meta property="og:image" content="http://artery.thunisoft.com/resFile?name=img/201904/e04fe34a3ea74a85be1ee74b9d852a5b.png">
+<meta property="og:image" content="http://artery.thunisoft.com/resFile?name=img/201904/287a13b6d96a4b62bc97271e8a74a840.png">
+<meta property="og:image" content="http://artery.thunisoft.com/resFile?name=img/201904/22c1df62e59b401281830823480d8c8f.png">
+<meta property="og:image" content="http://artery.thunisoft.com/resFile?name=img/201904/e2402868f6684445b2a4ec746f8b696e.png">
+<meta property="og:image" content="http://artery.thunisoft.com/resFile?name=img/201904/c4d372a456f34ea9a852503546b48b42.png">
+<meta property="og:image" content="http://artery.thunisoft.com/resFile?name=img/201904/a88ae0da17ff41bc80251c8e24ce8ab7.png">
+<meta property="og:image" content="http://artery.thunisoft.com/resFile?name=img/201904/3545dcb9af7648d29bd702f783727ba9.png">
+<meta property="og:image" content="http://artery.thunisoft.com/resFile?name=img/201904/6f9ab53d31d449e1841b500ba96417e6.gif">
+<meta property="og:image" content="http://artery.thunisoft.com/resFile?name=img/201904/e86b005977dd4ca49ad1aba64bb82f99.gif">
+<meta property="og:updated_time" content="2019-12-11T05:49:21.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Win10 中使用 Hyper-V 创建 Linux 虚拟机">
+<meta name="twitter:description" content="简介 Hyper-V 是微软的一款虚拟化产品，是微软第一个采用类似 Vmware 和 Citrix 开源 Xen 一样的基于 hypervisor 的技术。这也意味着微软会更加直接地与市场先行者 VMware 展开竞争，但竞争的方式会有所不同。 Hyper-V 是微软提出的一种系统管理程序虚拟化技术，能够实现桌面虚拟化。Hyper-V 最初预定在2008年第一季度，与 Windows Server">
+<meta name="twitter:image" content="http://artery.thunisoft.com/resFile?name=img/201904/56c70871f3a943399913a614505d2154.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/05/17/win10-hyper-v-linux/"/>
+
+
+
+
+
+  <title>Win10 中使用 Hyper-V 创建 Linux 虚拟机 | (ง •̀₃•́)ง</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">(ง •̀₃•́)ง</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+            韦
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+            编
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+            三
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/categories/绝/" rel="section">
+            
+            绝
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/17/win10-hyper-v-linux/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="WeiBianSanJue">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="(ง •̀₃•́)ง">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Win10 中使用 Hyper-V 创建 Linux 虚拟机</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-17T23:10:08+08:00">
+                2019-05-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/绝/" itemprop="url" rel="index">
+                    <span itemprop="name">绝</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><blockquote>
+<p>Hyper-V 是微软的一款虚拟化产品，是微软第一个采用类似 Vmware 和 Citrix 开源 Xen 一样的基于 hypervisor 的技术。这也意味着微软会更加直接地与市场先行者 VMware 展开竞争，但竞争的方式会有所不同。</p>
+<p>Hyper-V 是微软提出的一种系统管理程序虚拟化技术，能够实现桌面虚拟化。Hyper-V 最初预定在2008年第一季度，与 Windows Server 2008 同时发布。Hyper-V Server 2012 完成 RTM 版发布。</p>
+</blockquote>
+<p>本帖使用 Windows10 系统中的 Hyper-V 进行虚拟机的搭建。Windows 7 用户同样也可以使用 Hyper-V 进行虚拟机的搭建，但需要去微软官网另行下载 远程服务器管理工具的<a href="https://www.microsoft.com/zh-CN/download/details.aspx?id=7887" target="_blank" rel="noopener">更新补丁包</a>。Win7 的使用过程可<a href="http://blchen.com/manage-hyper-v-remotely-from-windows-7/" target="_blank" rel="noopener">参考此帖</a>。</p>
+<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ul>
+<li>Windows 10 专业版</li>
+</ul>
+<h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><h3 id="CentOS-7-的-iso-文件"><a href="#CentOS-7-的-iso-文件" class="headerlink" title="CentOS 7 的 iso 文件"></a>CentOS 7 的 iso 文件</h3><h3 id="CPU-虚拟化支持"><a href="#CPU-虚拟化支持" class="headerlink" title="CPU 虚拟化支持"></a>CPU 虚拟化支持</h3><ul>
+<li><p>使用 Hyper-V 需要 CPU 支持虚拟化，并开启此功能，可以在任务管理器中查看是否开启了虚拟化。<br><img src="http://artery.thunisoft.com/resFile?name=img/201904/56c70871f3a943399913a614505d2154.png" alt=""></p>
+</li>
+<li><p>Hyper-V 与 VMware 是不能同时使用的，不过网上也有两者互容的解决方案。</p>
+</li>
+</ul>
+<h3 id="开启-Hyper-V-功能"><a href="#开启-Hyper-V-功能" class="headerlink" title="开启 Hyper-V 功能"></a>开启 Hyper-V 功能</h3><ul>
+<li>进入 控制面板 -&gt; 程序和功能 -&gt; 启用或关闭 Windows 功能</li>
+<li>将 Hpyer-V 复原框选中，启用 Windows 的 Hyper-V 功能<br>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/cc83620011354aa4a116865b80ac2174.png" alt=""></li>
+</ul>
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><h3 id="创建虚拟机"><a href="#创建虚拟机" class="headerlink" title="创建虚拟机"></a>创建虚拟机</h3><ul>
+<li><p>启动 Hyper-V 管理器</p>
+<p>  在【开始】中搜索“Hyper-V”即可</p>
+<p>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/45b5cf9f310e4555a5422011535e7074.png" alt=""></p>
+</li>
+<li><p>进入 Hyper-V 管理器界面</p>
+<p>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/1986b3c698d14bc88e7c9ea4ed10fefd.png" alt=""></p>
+</li>
+<li><p>创建虚拟机</p>
+<p>  操作系统运行在硬件设备上，下面通过 Hyper-V 想到来创建一个虚拟的硬件设备。<br>  点击右侧操作区域中的“新建”/“虚拟机”</p>
+<p>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/5fcbd8e5807b40a0824424a3547113ca.png" alt=""></p>
+</li>
+<li><p>按照“新建虚拟机向导”一步步执行<br>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/36a3a5587ce44315b04403ddfba3402b.png" alt=""></p>
+</li>
+<li><p>填写虚拟机名称与虚拟机的存储位置<br>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/82af6435674e40baa58a411dd992dfe6.png" alt=""></p>
+<p>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/ca5a22f2cd0643b6a5bddf93a4140eb7.png" alt=""></p>
+</li>
+<li><p>指定一个虚拟机的启动内存。我设置成了2048MB。勾选动态内存，节约硬件资源。<br>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/253c1f3a2bab4a4c9e0512b133eda3c2.png" alt=""></p>
+</li>
+<li><p>选择“未链接”（联网的设置方法在其他章节介绍）<br>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/8ab953e32a594257bad65fc1deb45ab7.png" alt=""></p>
+<p>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/79c526a661514d5f827b4c35032d1bda.png" alt=""></p>
+</li>
+<li><p>找到事先准备好的 CentOS7 的 iso 系统镜像文件<br>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/372195c40cb94b7396b5184adf5ec784.png" alt=""></p>
+<p>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/b964827cf0014a448ad213ec1d4fe246.png" alt=""></p>
+</li>
+<li><p>点击“完成”后开始创建虚拟机<br>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/c496fe052fc4446dae3488bc20f32d3c.png" alt=""></p>
+</li>
+<li><p>完成后在 Hyper-V 的界面中间部分“虚拟机”中会有你刚才命名的虚拟机。<br>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/6ceb41f94c444bf093529033ce9a1a88.png" alt=""></p>
+</li>
+</ul>
+<h3 id="安装-CentOS-系统"><a href="#安装-CentOS-系统" class="headerlink" title="安装 CentOS 系统"></a>安装 CentOS 系统</h3><ul>
+<li><p>在“创建虚拟机”中我们已经将 CentOS7 的 iso 镜像放入了虚拟的光驱中。</p>
+</li>
+<li><p>选中创建好的虚拟机，点击右侧“启动”按钮。<br>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/5ff8c1549e354c47bbad086488527ce6.png" alt=""></p>
+</li>
+<li><p>然后点击上面的 “链接…”按钮，弹出一个虚拟机的视图窗口</p>
+<p>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/38c8a8bb136a4fae85a466bb479ed047.png" alt=""></p>
+</li>
+</ul>
+<ul>
+<li><p>CentOS 7 的具体安装过程可以参考这个<a href="https://www.linuxidc.com/Linux/2017-04/143013.htm" target="_blank" rel="noopener">文章</a><br>  注意安装软件包的时候不建议选择最小化和图形化两种安装方式，可以选择基础web服务<br>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/c3ea6d8d8ad945f78efed0cde703f028.png" alt=""></p>
+</li>
+<li><p>安装完成后，会出现登录的界面</p>
+</li>
+</ul>
+<h3 id="创建网络"><a href="#创建网络" class="headerlink" title="创建网络"></a>创建网络</h3><h4 id="新建虚拟网络交换机"><a href="#新建虚拟网络交换机" class="headerlink" title="新建虚拟网络交换机"></a>新建虚拟网络交换机</h4><ul>
+<li><p>点击右侧“操作”选项中“虚拟交换机管理器…”</p>
+<p>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/1d7de490ef4e4123b9f9cd302b25778b.png" alt=""></p>
+</li>
+<li><p>点击“新建虚拟网络交换机”，选择“外部”并“创建虚拟交换机”</p>
+<p>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/e04fe34a3ea74a85be1ee74b9d852a5b.png" alt=""></p>
+</li>
+<li><p>填写一个名称，勾选“链接类型”中的“外部网络“，之后点击确定<br>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/287a13b6d96a4b62bc97271e8a74a840.png" alt=""></p>
+</li>
+<li><p>给虚拟机选取网络</p>
+<p>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/22c1df62e59b401281830823480d8c8f.png" alt=""></p>
+</li>
+</ul>
+<h4 id="编辑网络配置文件"><a href="#编辑网络配置文件" class="headerlink" title="编辑网络配置文件"></a>编辑网络配置文件</h4>  <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@win-i5dseafvgn7 ~]# vim /etc/sysconfig/network-scripts/ifcfg-eth0</span><br></pre></td></tr></table></figure>
+<h4 id="设置成静态IP"><a href="#设置成静态IP" class="headerlink" title="设置成静态IP"></a>设置成静态IP</h4><ul>
+<li><p>修改如下</p>
+  <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">TYPE=Ethernet                            </span><br><span class="line">PROXY_METHOD=none                        </span><br><span class="line">BROWSER_ONLY=no                          </span><br><span class="line">BOOTPROTO=static           # 静态IP               </span><br><span class="line">DEFROUTE=yes                             </span><br><span class="line">IPV4_FAILURE_FATAL=no                    </span><br><span class="line">IPV6INIT=yes                             </span><br><span class="line">IPV6_AUTOCONF=yes                        </span><br><span class="line">IPV6_DEFROUTE=yes                        </span><br><span class="line">IPV6_FAILURE_FATAL=no                    </span><br><span class="line">IPV6_ADDR_GEN_MODE=stable-privacy        </span><br><span class="line">NAME=eth0                                </span><br><span class="line">UUID=2f997c5a-646f-41b1-98ed-70b78fd2114f</span><br><span class="line">DEVICE=eth0                              </span><br><span class="line">ONBOOT=yes                               </span><br><span class="line">IPADDR=172.16.**.**           # 改为实际的          </span><br><span class="line">GATEWAY=172.16.192.*       # 改为实际的              </span><br><span class="line">DNS1=172.16.1.*                # 改为实际的          </span><br><span class="line">NETMASK=255.255.***.0      # 改为实际的</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>重启网络</p>
+  <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@win-i5dseafvgn7 ~]# service network restart</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><ul>
+<li><p>使用 SSH 工具链接</p>
+<p>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/e2402868f6684445b2a4ec746f8b696e.png" alt=""></p>
+</li>
+</ul>
+<ul>
+<li><p>右键虚拟机链接</p>
+<p>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/c4d372a456f34ea9a852503546b48b42.png" alt=""></p>
+</li>
+</ul>
+<h3 id="创建共享"><a href="#创建共享" class="headerlink" title="创建共享"></a>创建共享</h3><ul>
+<li><p>将 Win10 上的文件夹共享出去</p>
+<ul>
+<li><p>文件夹右键属性</p>
+<p><img src="http://artery.thunisoft.com/resFile?name=img/201904/a88ae0da17ff41bc80251c8e24ce8ab7.png" alt=""></p>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>使用 【\ip\共享文件夹名】 方式访问</li>
+</ul>
+<p><img src="http://artery.thunisoft.com/resFile?name=img/201904/3545dcb9af7648d29bd702f783727ba9.png" alt=""></p>
+<ul>
+<li>在 Linux 中创建挂载点</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[root@win-i5dseafvgn7 ~]# cd /mnt/</span><br><span class="line">[root@win-i5dseafvgn7 mnt]# mkdir winlinux</span><br><span class="line">[root@win-i5dseafvgn7 mnt]# ls</span><br><span class="line">sources    winlinux</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>将 windows 共享挂载到挂载点上</p>
+<ul>
+<li><p>将 windows 共享时选择的用户、密码带入下面的命令中</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@win-ifvgn7 ~]# mount -t cifs //ip/winlinux /mnt/winlinux -o username=用户名,password=密码,vers=2.0</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>windows 与 linux 系统在编码方式上会有区别，Win10 可以设置系统编码为 UTF-8 ，但会出现一些问题</p>
+</li>
+<li>在 mount 时也可以加上编码格式</li>
+</ul>
+</li>
+<li><p>效果<br>  <img src="http://artery.thunisoft.com/resFile?name=img/201904/6f9ab53d31d449e1841b500ba96417e6.gif" alt=""></p>
+</li>
+</ul>
+<hr>
+<h2 id="enjoy-๑•̀ㅂ•́-و✧"><a href="#enjoy-๑•̀ㅂ•́-و✧" class="headerlink" title="enjoy(๑•̀ㅂ•́)و✧"></a>enjoy(๑•̀ㅂ•́)و✧</h2><p><img src="http://artery.thunisoft.com/resFile?name=img/201904/e86b005977dd4ca49ad1aba64bb82f99.gif" alt=""></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Blog/" rel="tag">
+
+	    	
+	    		<i class="fa fa-file-text"></i> 
+	    	
+	    	
+	    	
+
+	    	Blog
+	    </a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/10/06/ChinaCartoon1/" rel="next" title="国产动画推荐（一）">
+                <i class="fa fa-chevron-left"></i> 国产动画推荐（一）
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/09/01/0x0000-test-audio/" rel="prev" title="0x0000.儿童节试音">
+                0x0000.儿童节试音 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">WeiBianSanJue</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/categories/绝/">
+              
+                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#环境"><span class="nav-number">2.</span> <span class="nav-text">环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#准备"><span class="nav-number">3.</span> <span class="nav-text">准备</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#CentOS-7-的-iso-文件"><span class="nav-number">3.1.</span> <span class="nav-text">CentOS 7 的 iso 文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CPU-虚拟化支持"><span class="nav-number">3.2.</span> <span class="nav-text">CPU 虚拟化支持</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#开启-Hyper-V-功能"><span class="nav-number">3.3.</span> <span class="nav-text">开启 Hyper-V 功能</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#步骤"><span class="nav-number">4.</span> <span class="nav-text">步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建虚拟机"><span class="nav-number">4.1.</span> <span class="nav-text">创建虚拟机</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-CentOS-系统"><span class="nav-number">4.2.</span> <span class="nav-text">安装 CentOS 系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建网络"><span class="nav-number">4.3.</span> <span class="nav-text">创建网络</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#新建虚拟网络交换机"><span class="nav-number">4.3.1.</span> <span class="nav-text">新建虚拟网络交换机</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#编辑网络配置文件"><span class="nav-number">4.3.2.</span> <span class="nav-text">编辑网络配置文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置成静态IP"><span class="nav-number">4.3.3.</span> <span class="nav-text">设置成静态IP</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用"><span class="nav-number">4.4.</span> <span class="nav-text">使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建共享"><span class="nav-number">4.5.</span> <span class="nav-text">创建共享</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#enjoy-๑•̀ㅂ•́-و✧"><span class="nav-number">5.</span> <span class="nav-text">enjoy(๑•̀ㅂ•́)و✧</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">WeiBianSanJue</span>
+
+  
+</div>
+
+<span class="post-meta-divider">本站访客数:</span>
+<span id="busuanzi_container_site_uv">
+  <span id="busuanzi_value_site_uv"></span> /
+</span>
+<span id="busuanzi_container_site_pv">
+  <span id="busuanzi_value_site_pv"></span> 人
+</span>
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
