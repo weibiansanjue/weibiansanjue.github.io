@@ -1822,7 +1822,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #4dffd2;
+  background: #fff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2905,4 +2905,27 @@ hr {
     width: auto;
     text-align: center;
   }
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted #000; /* 悬停元素上显示点线 */
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #bbb;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  font-size: 10px;
+/* 定位 */
+  position: absolute;
+  z-index: 1;
+  margin-top: 45px;
+  margin-left: -40px;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
