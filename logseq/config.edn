@@ -415,4 +415,5 @@
  :journal/page-title-format "yyyy-MM-dd EEEE"
  :editor/logical-outdenting? true
  :publishing/all-pages-public? true
- :feature/enable-flashcards? false}
+ :feature/enable-flashcards? false
+ :feature/enable-whiteboards? true}
