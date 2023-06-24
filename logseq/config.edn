@@ -416,4 +416,5 @@
  :editor/logical-outdenting? true
  :publishing/all-pages-public? true
  :feature/enable-flashcards? false
- :feature/enable-whiteboards? true}
+ :feature/enable-whiteboards? true
+ :graph/settings {:journal? true, :builtin-pages? true}}
