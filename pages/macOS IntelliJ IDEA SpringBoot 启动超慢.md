@@ -1,4 +1,4 @@
-via:: [Idea突然启动SpringBoot项目变的很慢](https://blog.csdn.net/ai249841929/article/details/131181254) [Mac IDEA启动SpringBoot项目过慢](http://81.70.159.205/2019/05/06/IdeaSpringBoot/)
+tags:: [[tagIntelliJIDEA]]
 
 - 版本
 	- macOS：`13.4.1 (22F82)`
@@ -27,4 +27,6 @@ via:: [Idea突然启动SpringBoot项目变的很慢](https://blog.csdn.net/ai249
 	  127.0.0.1	localhost	xxMacBook-Pro.local
 	  ::1     localhost	xxxMacBook-Pro.local
 	  ```
-	-
+- 参考资料
+	- [Idea突然启动SpringBoot项目变的很慢](https://blog.csdn.net/ai249841929/article/details/131181254)
+	- [Mac IDEA启动SpringBoot项目过慢](http://81.70.159.205/2019/05/06/IdeaSpringBoot/)
